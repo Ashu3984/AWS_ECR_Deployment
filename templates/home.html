@@ -1,7 +1,6 @@
 <html>
 <body>
     <div class="login">
-       <h1>Student Exam Performance Indicator</h1>
    
        <form action="{{ url_for('predict')}}" method="post">
         <h1>
@@ -93,19 +92,20 @@
         <div class="mb-3">
             <label class="form-label">Writing Score out of 100</label>
             <input class="form-control" type="number" name="reading_score"
-                placeholder="Enter your Reading score" min='0' max='100' />
+                placeholder="Enter Reading score" min='0' max='100' />
         </div>
         <div class="mb-3">
             <label class="form-label">Reading Score out of 100</label>
             <input class="form-control" type="number" name="writing_score"
-                placeholder="Enter your Reading Score" min='0' max='100' />
+                placeholder="Enter writing Score" min='0' max='100' />
         </div>
         <div class="mb-3">
-            <input class="btn btn-primary" type="submit" value="Predict your Maths Score" required />
+            <input class="btn btn-primary" type="submit" value="click to Predict" required />
         </div>
     </form>
     <h2>
-       THE  prediction is {{results}}
+        predicted score is .....
+                {{results}}
     </h2>
    <body>
 </html>
