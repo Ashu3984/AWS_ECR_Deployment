@@ -17,7 +17,7 @@ def get_requirements(file_path:str)->List[str]:
     return requirements
 
 setup(
-name='end-to-end-MLFlows',
+name='AWS_ECR_Deployment',
 version='0.0.1',
 author='Ashu3984',
 author_email='ashutossahoo3984@gmail.com',
